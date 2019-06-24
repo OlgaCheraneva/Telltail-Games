@@ -1,0 +1,33 @@
+.user-completion-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 21px;
+}
+
+.user-completion-item {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  padding-top: 4px;
+  padding-right: 10px;
+  margin-right: 11px;
+}
+
+.user-info__avatar {
+  border-radius: 50%;
+}
+
+.user-info__count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font: normal normal 18px /15px 'Gabriela', serif;
+  background: #ffff;
+}

@@ -1,0 +1,4 @@
+{
+  "watch": ["dist/", "views/", "public/"],
+  "ext": "js, json, hbs"
+}

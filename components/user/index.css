@@ -1,0 +1,11 @@
+.user-info__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.user-info__login {
+  font: normal normal 30px /15px 'Gabriela', serif;
+  margin-right: 26px;
+}

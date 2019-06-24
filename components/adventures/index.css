@@ -1,0 +1,56 @@
+.adventures {
+  display: flex;
+  flex-direction: column;
+}
+
+.adventure {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.adventure__image {
+  margin-right: 34px;
+}
+
+.adventure__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.adventure__title {
+  margin: 10px 0 22px;
+}
+
+.title__text {
+  font: normal normal 30px /15px 'Gabriela', serif;
+  color: #000;
+}
+
+.adventure__description {
+  font: normal normal 18px /28px 'Gabriela', serif;
+  margin-bottom: 14px;
+  color: #000;
+}
+
+.adventure__hashtags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.adventure__hashtag {
+  background: #b3b3b3;
+  border-radius: 4px;
+  padding: 0 18px;
+  margin: 0 9px 12px 0;
+}
+
+.hashtag__name {
+  font: normal normal 18px /38px 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.hashtag__title {
+  font: normal normal 42px /15px 'Gabriela', serif;
+  margin: 46px 0 60px;
+}

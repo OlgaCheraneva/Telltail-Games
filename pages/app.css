@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Gabriela|Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #fff;
+}
+
+.link,
+.list,
+.list__item {
+  text-decoration: none;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.layout {
+  margin: 0 110px;
+  width: 756px;
+}
+
+.container {
+  margin: 60px 0;
+}
+
+.button_disabled {
+  opacity: 0.6;
+}
+
+.error-message {
+  font-size: 0.9em;
+  opacity: 0.8;
+  margin: 0 15px 20px;
+}

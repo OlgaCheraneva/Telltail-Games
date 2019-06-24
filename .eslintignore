@@ -1,0 +1,9 @@
+/server/models/Achievement.ts
+/server/models/AchievementScene.ts
+/server/models/Action.ts
+/server/models/Adventure.ts
+/server/models/Hashtag.ts
+/server/models/HashtagAdventure.ts
+/server/models/Scene.ts
+/server/apiRouter.ts
+/node_modules

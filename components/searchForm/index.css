@@ -1,0 +1,114 @@
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 60px 0 16px;
+}
+
+.search__input,
+.hashtag-filter__input,
+.hashtag-filter__suggestions {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 3px 16px;
+  font: normal normal 15px /32px 'Roboto', sans-serif;
+  color: #000;
+}
+
+.search__input {
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+.hashtag-filter__input-container {
+  position: relative;
+  width: 40%;
+}
+
+.hashtag-filter__input {
+  width: 100%;
+}
+
+.hashtag-filter__suggestions {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  background: #fff;
+  opacity: 1;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.hashtag-filter__suggestions_display-none {
+  display: none;
+}
+
+.search__input:focus,
+.hashtag-filter__input:focus,
+.hashtag-filter__suggestions:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.search__button {
+  background: #f39ac2;
+  border-radius: 4px;
+  font: normal normal 18px /38px 'Roboto', sans-serif;
+  color: #fff;
+  padding: 0 18px;
+  border: none;
+}
+
+.hashtag-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+
+.selected-hashtag-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 60%;
+  margin-right: 18px;
+}
+
+.selected-hashtag {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  background: #2d9cdb;
+  border-radius: 4px;
+  margin: 0 19px 10px 0;
+  padding: 0 12px 0 18px;
+  font: lighter normal 18px /38px 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.selected-hashtag__remove-button {
+  margin: 0;
+  padding: 0;
+  background: inherit;
+  border: none;
+}
+
+.remove-button {
+  margin-left: 8px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.hashtag-filter__suggestion {
+  font: normal normal 15px /32px 'Roboto', sans-serif;
+  color: #000;
+  cursor: pointer;
+}
+
+.hashtag-filter__suggestion_focused {
+  color: #2d9cdb;
+}
+
+.hidden {
+  display: none;
+}
