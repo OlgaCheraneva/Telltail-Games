@@ -2,6 +2,7 @@ import React, {Component, Fragment} from 'react';
 
 import Adventures from '../components/adventures';
 import SearchForm from '../components/searchForm';
+import Spinner from '../components/spinner';
 import PathContext from '../server/pathContext';
 
 import {IAdventureData} from 'types';
@@ -139,7 +140,8 @@ export default class IndexPage extends Component<
     render() {
         const {adventures, loading} = this.state;
         if (loading) {
-            return <p>Загрузка...</p>;
+            // return <p>Загрузка...</p>;
+            return <Spinner />;
         }
         return (
             <Fragment>

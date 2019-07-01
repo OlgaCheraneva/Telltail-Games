@@ -1,38 +1,67 @@
-
-.scene__achievements {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 910px;
-  margin: 10px 0;
-}
-
-.scene__achievement {
-  width: 45%;
-  height: 130px;
-  display: flex;
-}
-
-.achievement__image {
-  border-radius: 50%;
-  width: 130px;
-  height: 130px;
-  margin-right: 21px;
-}
-
-.achievement__info {
+.adventures {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  animation: show 1300ms ease-in;
 }
 
-.achievement__title {
-  width: 100%;
-  margin-bottom: 12px;
-  font-size: 20px;
-  overflow: hidden;
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-.achievement__name {
-  font-size: 38px;
+.adventure {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.adventure__image {
+  margin-right: 34px;
+}
+
+.adventure__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.adventure__title {
+  margin: 10px 0 22px;
+}
+
+.title__text {
+  font: normal normal 30px /15px 'Gabriela', serif;
+  color: #000;
+}
+
+.adventure__description {
+  font: normal normal 18px /28px 'Gabriela', serif;
+  margin-bottom: 14px;
+  color: #000;
+}
+
+.adventure__hashtags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.adventure__hashtag {
+  background: #b3b3b3;
+  border-radius: 4px;
+  padding: 0 18px;
+  margin: 0 9px 12px 0;
+}
+
+.hashtag__name {
+  font: normal normal 18px /38px 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.hashtag__title {
+  font: normal normal 42px /15px 'Gabriela', serif;
+  margin: 46px 0 60px;
 }
