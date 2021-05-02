@@ -1,0 +1,191 @@
+const sequelize = new Sequelize('postgres://xkkgxgud:L9l63nMvl7_TwnGvDcrznzMoHc5GuwLO@isilo.db.elephantsql.com:5432/xkkgxgud');
+
+// Создание таблиц
+sequelize.addModels([Adventure, Hashtag, HashtagAdventure, Scene, Action, Achievement, AchievementScene]);
+
+// Adventure.sync({ force: true }).then((res: any) => {
+//     console.info(res);
+//     Adventure.bulkCreate([
+//     {
+//         title: 'Бой с драконом',
+//         description: '',
+//         // hashtags: 'дракон, фэнтези, hard, берсерк'
+//     },
+//     {
+//         title: 'Эпичный квест',
+//         description: '',
+//         // hashtags: 'команда, магия, фэнтези'
+//     },
+//     {
+//         title: 'Приключения мага',
+//         description: 'Древнее Зло вновь набирается сил... Грядет новая битва. Вы – единственная надежда выстоять в финальной битве с темными силами.',
+//         // hashtags: 'магия, фэнтези'
+//     }
+//     ]);
+// });
+
+// HashtagAdventure.sync({ force: true }).then((res: any) => {
+//     console.info(res);
+//     HashtagAdventure.bulkCreate([
+//         {
+//             hashtagId: 1,
+//             adventureId: 1
+//         },
+//         {
+//             hashtagId: 2,
+//             adventureId: 1
+//         },
+//         {
+//             hashtagId: 3,
+//             adventureId: 1
+//         },
+//         {
+//             hashtagId: 4,
+//             adventureId: 1
+//         },
+//         {
+//             hashtagId: 5,
+//             adventureId: 2
+//         },
+//         {
+//             hashtagId: 6,
+//             adventureId: 2
+//         },
+//         {
+//             hashtagId: 2,
+//             adventureId: 2
+//         },
+//         {
+//             hashtagId: 2,
+//             adventureId: 3
+//         },
+//         {
+//             hashtagId: 6,
+//             adventureId: 3
+//         },
+//     ]);
+// });
+
+// Hashtag.sync({ force: true }).then((res: any) => {
+//     console.info(res);
+//     Hashtag.bulkCreate([
+//         {
+//             name: 'дракон',
+//             addressName: 'dragon'
+//         },
+//         {
+//             name: 'фэнтези',
+//             addressName: 'fantasy'
+//         },
+//         {
+//             name: 'hard',
+//             addressName: 'hard'
+//         },
+//         {
+//             name: 'берсерк',
+//             addressName: 'berzerk'
+//         },
+//         {
+//             name: 'команда',
+//             addressName: 'team'
+//         },
+//         {
+//             name: 'магия',
+//             addressName: 'magic'
+//         }
+//     ]);
+// });
+
+// Scene.bulkCreate([
+//         {
+//             description: 'Древнее зло пробудилось. Оно уничтожает города один за другим. Горстка выживших просят вас о помощи. Готовы ли вы бросить ему вызов?',
+//             descriptionLocation: 'bottom-left',
+//             adventureId: 3
+//         },
+//         {
+//             description: 'Выберите заклинание',
+//             descriptionLocation: 'bottom-right'
+//         },
+//         {
+//             description: 'Начинается бой...',
+//             descriptionLocation: 'bottom-right'
+//         },
+//         {
+//             description: 'Вы убежали и остались целы. Мудрый поступок!',
+//             descriptionLocation: 'top-left'
+//         },
+//         {
+//             description: 'Вы храбро сражались. До самой смерти.',
+//             descriptionLocation: 'top-left'
+//         }
+//     ]);
+
+// Action.sync({force:true}).then(() => {
+//     Action.bulkCreate([
+//         {
+//             name: 'Убежать',
+//             nextSceneId: 4,
+//             sceneId: 1
+//         },
+//         {
+//             name: 'Драться',
+//             nextSceneId: 2,
+//             sceneId: 1
+//         },
+//         {
+//             name: 'Передумать',
+//             nextSceneId: 1,
+//             sceneId: 2
+//         },
+//         {
+//             name: 'Фаербол',
+//             nextSceneId: 3,
+//             sceneId: 2
+//         },
+//         {
+//             name: 'Кольцо холода',
+//             nextSceneId: 3,
+//             sceneId: 2
+//         },
+//         {
+//             name: 'Дальше',
+//             nextSceneId: 4,
+//             sceneId: 5
+//         },
+//         {
+//             name: 'Начать заново',
+//             nextSceneId: 1,
+//             sceneId: 4
+//         },
+//         {
+//             name: 'Начать заново',
+//             nextSceneId: 1,
+//             sceneId: 5
+//         }
+//     ]);
+// });
+
+// Achievement.sync({ force: true }).then(() => {
+//     Achievement.bulkCreate([
+//         {
+//             name: 'Мудрец'
+//         },
+//         {
+//             name: 'YOU DIED'
+//         },
+//     ]);
+//     AchievementScene.sync({ force: true }).then(() => {
+//         AchievementScene.bulkCreate([
+//             {
+//                 achievementId: 1,
+//                 sceneId: 4
+//             },
+//             {
+//                 achievementId: 2,
+//                 sceneId: 5
+//             },
+//         ])
+//     });
+// });
+
+// sequelize.sync({ force: true });
