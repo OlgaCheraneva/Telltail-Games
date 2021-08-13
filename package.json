@@ -40,7 +40,7 @@
     "heroku": "7.22.9",
     "isomorphic-fetch": "2.2.1",
     "morgan": "1.9.1",
-    "next": "8.0.4",
+    "next": "11.1.0",
     "pg": "7.9.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
